@@ -22,7 +22,7 @@ namespace weiwang_home.Controllers
 
         public ActionResult Contact()
         {
-            ViewBag.Message = "Your contact page.";
+            ViewBag.Message = "Contact Me:";
 
             return View();
         }

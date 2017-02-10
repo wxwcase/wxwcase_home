@@ -17,7 +17,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                @Html.ActionLink("SeeSharp", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+                @Html.ActionLink("Wei Wang", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
@@ -30,15 +30,26 @@
         </div>
     </div>
     <div class="container body-content">
+
+        <div class="weather-container">
+            <div class="row">
+                <div class="col-lg-6 col-md-12 col-sm-12"></div>
+                <div id="weather" class="col-lg-6 col-md-12 col-sm-12"></div>
+            </div>
+        </div>
+
         @RenderBody()
         <hr />
+
         <footer>
-            <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
+            <p>&copy; @DateTime.Now.Year - Wei Wang</p>
         </footer>
     </div>
 
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
+    @Scripts.Render("~/bundles/jquery-simpleweather")
+    @Scripts.Render("~/bundles/app")
     @RenderSection("scripts", required: false)
 </body>
 </html>
