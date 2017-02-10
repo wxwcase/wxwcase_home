@@ -24,7 +24,7 @@ namespace weiwang_home
                       "~/Scripts/respond.js"));
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
-                      "~/Content/bootstrap.css",
+                      "~/Content/bootstrap_lumen.min.css",
                       "~/Content/site.css"));
         }
     }
